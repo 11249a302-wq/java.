@@ -1,0 +1,29 @@
+package com.fee.report;
+
+public class FeeReportPrinter {
+
+    /**
+     * Prints a formatted fee report table to the console.
+     */
+    public static void printFeeReport() {
+        System.out.println("=========================================================");
+        System.out.println("                    STUDENT FEE REPORT                   ");
+        System.out.println("=========================================================");
+        
+        // Print table header
+        System.out.printf("%-8s | %-18s | %-12s | %-10s\n", "ID", "Student Name", "Tuition Fee", "Total Paid");
+        System.out.println("---------------------------------------------------------");
+        
+        // Print sample rows
+        System.out.printf("%-8s | %-18s | $%-11.2f | $%-9.2f\n", "001", "Alice Smith", 1200.00, 1200.00);
+        System.out.printf("%-8s | %-18s | $%-11.2f | $%-9.2f\n", "002", "Bob Jones", 1500.00, 1500.00);
+        System.out.printf("%-8s | %-18s | $%-11.2f | $%-9.2f\n", "003", "Charlie Brown", 1350.00, 1350.00);
+        
+        System.out.println("=========================================================");
+    }
+
+    // Optional main method for testing this class independently
+    public static void main(String[] args) {
+        printFeeReport();
+    }
+}
